@@ -7,7 +7,6 @@ import { GetStaticProps, GetStaticPaths } from "next"
 import { stripe } from "@/lib/stripe"
 import Stripe from "stripe"
 import { useRouter } from "next/router"
-import axios from "axios"
 import { useState } from "react"
 import Head from "next/head"
 import { useShoppingCart } from "use-shopping-cart"
@@ -75,7 +74,12 @@ export default function Product({ product }: ProductProps) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [],
+    paths: [
+      { params: { id: 'prod_QTqMcUzS2jVuQH' } },
+      { params: { id: 'prod_QTqLFepTJLMmwf' } },
+      { params: { id: 'prod_QTqLuHqUmBPHmk' } },
+      { params: { id: 'prod_QTqKiVmqxjig3L' } },
+    ],
     fallback: true,
   }
 }
