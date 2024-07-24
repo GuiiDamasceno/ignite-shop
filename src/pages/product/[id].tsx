@@ -1,3 +1,5 @@
+"use client"
+
 import { ImageContainer, ProductContainer, ProductDetails } from "@/styles/pages/product"
 import Image from "next/image"
 

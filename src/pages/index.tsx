@@ -12,7 +12,6 @@ import Link from "next/link";
 
 import { Bag } from '@phosphor-icons/react'
 import { useShoppingCart } from "use-shopping-cart";
-import { IProduct } from "@/@types/ProductType";
 
 interface HomeProps {
   products: {
